@@ -21,7 +21,7 @@ body{
     min-height: 100vh;
     width: 100%;
     position: relative;
-    padding: 0 2vw;
+    
     
     
 }
@@ -93,8 +93,117 @@ nav img{
     text-align: start;
 }
 
-video{
+.video{
     width: 100%;
-    position: absolute;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+   
+}
 
+.video video{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* padding: 5px; */
+    border-radius: 3px solid black  ;
+}
+
+.page2{
+
+    width: 100%;
+    height: 100vh;
+    padding: 8vw 0
+   
+}
+
+
+
+.moving-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+.moving-text h1{
+    font-size: 6vw;
+    display: inline-block;
+}
+
+.gola{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 1vw 2vw;
+    background-color: rgb(254,50,11);
+}
+
+.con{
+     display: flex;
+    padding: 5px;
+    animation-name: moving-text;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes moving-text{
+    from{
+        translate: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.page2-bottom{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.page2-bottom h1{
+    font-size: 3.5vw;
+    width: 50%;
+    padding: 3vw;
+
+}
+
+.bottom-part2{
+    width: 20%;
+    padding: 3vw;
+    /* background-color: blueviolet; */
+    
+}
+.bottom-part2 img{
+    width: 100%;
+    border-radius: 25px ;
+}
+
+.bottom-part2  p{
+     font-weight: 100;
+     font-size: small;
+     margin-top: 1vw;
+}
+.object{
+    display: flex;
+    padding: 1vw;
+    align-items: center;
+}
+.gola2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+   margin-right: 1vw;
+    background-color: rgb(254,50,11); ;
 }
