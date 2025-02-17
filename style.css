@@ -310,3 +310,21 @@ nav img{
 
 }
 
+.page5{
+    background-color: darkgoldenrod;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+
+}
+
+.coint{
+    width: 70%;
+    font-size: 12px;
+    border-left: 2px solid black;
+    margin-left: 1vw;
+    padding: 1vw;
+    /* word-wrap: break-word; */
+}
